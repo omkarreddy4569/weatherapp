@@ -15,7 +15,7 @@ let options={
 }
 
 searchButtonEl.addEventListener("click",function(){
-    let userInput = cityInputEl.value ;
+    let userInput = cityInputEl.value.trim();
     if(userInput===""){
         alert("Please enter a city");
         return;
