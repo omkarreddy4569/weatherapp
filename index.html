@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="weatherapp.css">
+</head>
+<body>
+  <div class="weather-container">
+    <div id="weather-form" class="weather-search-container">
+      <input class="inputBox" type="text" id="cityInput" placeholder="Enter city name">
+      <button class="btn btn-outline-secondary" id="searchButton">Search</button>
+    </div>
+
+    <div class="weather-info">
+      <h2 id="cityName">City Name</h2>
+      <p id="datetime">Date & Time</p>
+
+      <div class="main-weather">
+        <img id="weather-icon" src="https://openweathermap.org/img/wn/01d.png" alt="Weather Icon">
+        <h1 id="temperature">--°C</h1>
+        <p id="condition">Weather Condition</p>
+      </div>
+
+      <div class="extra-info">
+        <div class="info-block">
+          <img src="https://cdn-icons-png.freepik.com/512/2938/2938122.png?ga=GA1.1.2078179788.1721360007" alt="Humidity">
+          <p>Humidity: <span id="humidity">--%</span></p>
+        </div>
+        <div class="info-block">
+          <img src="https://cdn-icons-png.freepik.com/512/16770/16770051.png?ga=GA1.1.2078179788.1721360007" alt="Wind Speed">
+          <p>Wind: <span id="windSpeed">-- km/h</span></p>
+        </div>
+        <div class="info-block">
+          <img src="https://cdn-icons-png.freepik.com/512/16405/16405500.png?ga=GA1.1.2078179788.1721360007" alt="Rain">
+          <p>Rain: <span id="rain">-- mm</span></p>
+        </div>
+        <div class="info-block">
+          <img src="https://cdn-icons-png.freepik.com/512/11330/11330461.png?ga=GA1.1.2078179788.1721360007" alt="Pressure">
+          <p>Pressure: <span id="pressure">-- hPa</span></p>
+        </div>
+        <div class="info-block">
+          <img src="https://cdn-icons-png.freepik.com/512/3226/3226462.png?ga=GA1.1.2078179788.1721360007" alt="Sunrise">
+          <p>Sunrise: <span id="sunrise">--</span></p>
+        </div>
+        <div class="info-block">
+          <img src="https://cdn-icons-png.freepik.com/512/1090/1090669.png?ga=GA1.1.2078179788.1721360007" alt="Sunset">
+          <p>Sunset: <span id="sunset">--</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="weatherapp.js"></script>
+</body>
+</html>
